@@ -391,3 +391,95 @@ function seleccionarChatAldo() {
 	crearDivHora.setAttribute("class", "time");
 	//otros
 }
+
+function seleccionarChatCurricula() {
+	//rescatar elementos
+	var fotoCurricula = document.getElementsByClassName("wh-44")[9].value;
+	var nodoFotoCurricula = document.createTextNode(fotoCurricula);
+	var avatarChat = document.getElementsByClassName("avatar")[12];
+	var fotoChat = avatarChat.getElementsByTagName("img")[0];
+	fotoChat.innerHTML = "";
+	fotoChat.appendChild(nodoFotoCurricula);
+
+	var nombreCurricula = document.getElementsByClassName("w-contact-name")[9].value;
+	var nodoNombreCurricula = document.createTextNode(nombreCurricula);
+	var nombreChat = avatarChat.getElementsByTagName("h4")[0];
+	nombreChat.innerHTML = "";
+	nombreChat.appendChild(nodoNombreCurricula);
+
+	var nodoHoraUltimaConexion = document.createTextNode("Última conexión a las 10:23");
+	var ultimaConexion = avatarChat.getElementsByTagName("ul")[0];
+	ultimaConexion.innerHTML = "";
+	ultimaConexion.appendChild(nodoHoraUltimaConexion);
+
+	var chatMsjes = document.getElementById("chat");
+	var crearDiv1 = document.createElement("div");
+	chatMsjes.innerHTML = "";
+	chatMsjes.appendChild(crearDiv1);
+
+	var crearDiv2 = document.createElement("div");
+	var crearParrafoMsje = document.createElement("p");
+	var crearDivHora = document.createElement("div");
+	var ultimoMsjeCurricula = document.getElementsByClassName("w-last-message")[9].value;
+	var nodoUltimoMsjeCurricula = document.createTextNode(ultimoMsjeCurricula);
+	var horaUltimoMsjeCurricula = document.getElementsByClassName("time")[9].value;
+	var nodoHora = document.createTextNode(horaUltimoMsjeCurricula); 
+
+	crearDiv1.appendChild(crearDiv2);
+	crearDiv2.appendChild(crearParrafoMsje);
+	crearParrafoMsje.appendChild(nodoUltimoMsjeCurricula);
+	crearDiv2.appendChild(crearDivHora);
+	crearDivHora.appendChild(nodoHora);
+
+	//atributos
+	crearDiv1.setAttribute("class", "w-message w-message-in");
+	crearDiv2.setAttribute("class", "w-message-text")
+	crearDivHora.setAttribute("class", "time");
+	//otros
+}
+
+function seleccionarChatJose() {
+	//rescatar elementos
+	var fotoJose = document.getElementsByClassName("wh-44")[9].value;
+	var nodoFotoJose = document.createTextNode(fotoJose);
+	var avatarChat = document.getElementsByClassName("avatar")[12];
+	var fotoChat = avatarChat.getElementsByTagName("img")[0];
+	fotoChat.innerHTML = "";
+	fotoChat.appendChild(nodoFotoJose);
+
+	var nombreJose = document.getElementsByClassName("w-contact-name")[9].value;
+	var nodoNombreJose = document.createTextNode(nombreJose);
+	var nombreChat = avatarChat.getElementsByTagName("h4")[0];
+	nombreChat.innerHTML = "";
+	nombreChat.appendChild(nodoNombreJose);
+
+	var nodoHoraUltimaConexion = document.createTextNode("Última conexión a las 10:23");
+	var ultimaConexion = avatarChat.getElementsByTagName("ul")[0];
+	ultimaConexion.innerHTML = "";
+	ultimaConexion.appendChild(nodoHoraUltimaConexion);
+
+	var chatMsjes = document.getElementById("chat");
+	var crearDiv1 = document.createElement("div");
+	chatMsjes.innerHTML = "";
+	chatMsjes.appendChild(crearDiv1);
+
+	var crearDiv2 = document.createElement("div");
+	var crearParrafoMsje = document.createElement("p");
+	var crearDivHora = document.createElement("div");
+	var ultimoMsjeJose = document.getElementsByClassName("w-last-message")[9].value;
+	var nodoUltimoMsjeJose = document.createTextNode(ultimoMsjeJose);
+	var horaUltimoMsjeJose = document.getElementsByClassName("time")[9].value;
+	var nodoHora = document.createTextNode(horaUltimoMsjeJose); 
+
+	crearDiv1.appendChild(crearDiv2);
+	crearDiv2.appendChild(crearParrafoMsje);
+	crearParrafoMsje.appendChild(nodoUltimoMsjeJose);
+	crearDiv2.appendChild(crearDivHora);
+	crearDivHora.appendChild(nodoHora);
+
+	//atributos
+	crearDiv1.setAttribute("class", "w-message w-message-in");
+	crearDiv2.setAttribute("class", "w-message-text")
+	crearDivHora.setAttribute("class", "time");
+	//otros
+}
